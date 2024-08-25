@@ -5,12 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
   </head>
-  <body>
-    <div class="bg-black">
+  <body class="flex">
+    <div
+      class="fixed top-0 left-0 h-screen p-0 w-64 bg-black text-white text-center overflow-y-auto flex flex-col"
+    >
+      <div class="p-0">
+        <img
+          src="https://www.w3schools.com/w3images/avatar_smoke.jpg"
+          alt="Logo"
+          class="w-auto h-auto object-cover mx-auto"
+        />
+      </div>
+
+      <nav class="flex-1">
+        <a href="#home" class="block py-10 px-6 hover:bg-gray-700"
+          ><i class="fa-solid fa-house"></i>Home</a
+        >
+        <a href="#about" class="block py-10 px-6 hover:bg-gray-700"
+          ><i class="fa-regular fa-user"></i>About</a
+        >
+        <a href="#photos" class="block py-10 px-6 hover:bg-gray-700"
+          ><i class="fa-solid fa-photo-film"></i>Photos</a
+        >
+        <a href="#contact" class="block py-10 px-6 hover:bg-gray-700"
+          ><i class="fa-solid fa-phone"></i>Contact</a
+        >
+      </nav>
+    </div>
+
+    <div class="ml-64 bg-black p-10">
       <div class="w-full py-5">
         <h1 class="text-white text-center text-6xl my-8">I'm John Doe.</h1>
-        <p class="text-white text-center text-1xl">
+        <p class="text-white text-center text-xl">
           Photographer and Web Designer.
         </p>
       </div>
@@ -18,12 +49,12 @@
         <img
           src="https://www.w3schools.com/w3images/man_smoke.jpg"
           alt="Image of John Doe"
-          width="100%"
+          class="w-full h-auto"
         />
       </div>
-      <div class="px-10" id="About">
+      <div class="px-10 mt-10" id="about">
         <h2 class="py-5 text-2xl text-white">My Name:</h2>
-        <hr />
+        <hr class="border-gray-600" />
         <p class="py-3 text-lg text-white">
           Some text about me. Some text about me. I am lorem ipsum consectetur
           adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
@@ -39,19 +70,123 @@
         <div class="py-8">
           <h3 class="py-5 text-2xl text-white">My Skills</h3>
           <h3 class="text-white py-5">Photography</h3>
-          <div class="w-170 h-8 bg-white">
-            <div class="h-full bg-slate-700" style="width: 80%"></div>
+          <div class="w-full max-w-sm bg-white rounded">
+            <div class="h-8 bg-slate-700" style="width: 80%"></div>
           </div>
           <h3 class="text-white py-5">Web Design</h3>
-          <div class="w-170 h-8 bg-white">
-            <div class="h-full bg-slate-700" style="width: 92%"></div>
+          <div class="w-full max-w-sm bg-white rounded">
+            <div class="h-8 bg-slate-700" style="width: 92%"></div>
           </div>
           <h3 class="text-white py-5">Photoshop</h3>
-          <div class="w-170 h-8 bg-white">
-            <div class="h-full bg-slate-700" style="width: 75%"></div>
+          <div class="w-full max-w-sm bg-white rounded">
+            <div class="h-8 bg-slate-700" style="width: 75%"></div>
           </div>
         </div>
-        <div class="py-20 w-170 h-200 bg-white d-flex"></div>
+        <div class="my-8 py-10 bg-white flex justify-around rounded">
+          <div>
+            <h3 class="text-center text-3xl">11+</h3>
+            <p class="text-center text-xl">partners</p>
+          </div>
+          <div>
+            <h3 class="text-center text-3xl">55+</h3>
+            <p class="text-center text-xl">projects</p>
+          </div>
+          <div>
+            <h3 class="text-center text-3xl">89+</h3>
+            <p class="text-center text-xl">Happy Clients</p>
+          </div>
+          <div>
+            <h3 class="text-center text-3xl">150+</h3>
+            <p class="text-center text-xl">Meetings</p>
+          </div>
+        </div>
+        <button class="bg-white text-black p-3 rounded">
+          <i class="fa-solid fa-download"></i> Download Resume
+        </button>
+      </div>
+      <div class="py-10" id="photos">
+        <h2 class="text-2xl mb-4">My Photos</h2>
+        <div class="flex flex-wrap">
+          <div class="w-1/2 p-2">
+            <img
+              src="https://www.w3schools.com/w3images/wedding.jpg"
+              alt=""
+              class="w-full h-auto"
+            />
+          </div>
+          <div class="w-1/2 p-2">
+            <img
+              src="https://www.w3schools.com/w3images/underwater.jpg"
+              alt=""
+              class="w-full h-auto"
+            />
+          </div>
+          <div class="w-1/2 p-2">
+            <img
+              src="https://www.w3schools.com/w3images/rocks.jpg"
+              alt=""
+              class="w-full h-auto"
+            />
+          </div>
+          <div class="w-1/2 p-2">
+            <img
+              src="https://www.w3schools.com/w3images/chef.jpg"
+              alt=""
+              class="w-full h-auto"
+            />
+          </div>
+          <div class="w-1/2 p-2">
+            <img
+              src="https://www.w3schools.com/w3images/wedding.jpg"
+              alt=""
+              class="w-full h-auto"
+            />
+          </div>
+          <div class="w-1/2 p-2">
+            <img
+              src="https://www.w3schools.com/w3images/sailboat.jpg"
+              alt=""
+              class="w-full h-auto"
+            />
+          </div>
+          <div class="w-1/2 p-2">
+            <img
+              src="https://www.w3schools.com/w3images/p6.jpg"
+              alt=""
+              class="w-full h-auto"
+            />
+          </div>
+        </div>
+      </div>
+      <div id="contact" class="text-white">
+        <h3 class="text-white text-center text-3xl"></h3>
+        <form class="py-5 h-8">
+          <input
+            type="text"
+            name="name"
+            placeholder="Your Name"
+            class="w-full px-4 py-4 border border-gray-300"
+          />
+
+          <input
+            type="email"
+            name="email"
+            placeholder="Your Email"
+            class="w-full px-4 py-2 border border-gray-300"
+          />
+          <input
+            type="text"
+            name="Suject"
+            placeholder="Sebject"
+            class="w-full px-4 py-2 border border-gray-300"
+          />
+          <input
+            type="text-Area"
+            name="Message"
+            placeholder="Message"
+            class="w-full px-4 py-2 border border-gray-300"
+          />
+        </form>
       </div>
     </div>
   </body>
